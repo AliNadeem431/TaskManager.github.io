@@ -67,6 +67,9 @@ h4{
 }
 
 .greeting input[type="button"]{
+    position: absolute;
+    top: 70px;
+    right: 20px;
     background-color: red;
 }
 
