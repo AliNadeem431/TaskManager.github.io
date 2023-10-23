@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./Icons/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Todo App</title>
+</head>
+
+<body>
+  <main class="app">
+    <section class="greeting">
+      <h2 class="title">
+        What's Up,
+      </h2>
+      <input type="text" id="name" placeholder="Enter Name Here" />
+      <input title="Delete Everthing?" onclick="clearStorage();" class="clear" type="button" value="ClearAll">
+    </section>
+
+    <section class="create-todo">
+      <h3>CREATE TODO</h3>
+
+      <form id="new-todo-form">
+        <h4>What's on your Todo List?</h4>
+        <input type="text" name="content" id="content" placeholder="Enter Todo Here..." />
+
+        <h4>Pick a Category</h4>
+        <div class="options">
+
+          <label>
+            <input type="radio" name="category" id="category1" value="Buisness">
+            <span class="bubble buisness"></span>
+            <div>Buisness</div>
+          </label>
+
+          <label>
+            <input type="radio" name="category" id="category2" value="Personal">
+            <span class="bubble personal"></span>
+            <div>Personal</div>
+          </label>
+        </div>
+
+        <input type="submit" value="Add Todo">
+      </form>
+    </section>
+
+    <section class="todo-list">
+      <h3>TODO LIST</h3>
+      <div class="list" id="todo-list">
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
